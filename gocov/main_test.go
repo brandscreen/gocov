@@ -26,7 +26,7 @@ import (
 	"testing"
 )
 
-const testdata = "github.com/axw/gocov/gocov/testdata"
+const testdata = "github.com/brandscreen/gocov/gocov/testdata"
 
 func cloneFlagSet(f *flag.FlagSet) *flag.FlagSet {
 	clone := flag.NewFlagSet("", flag.ContinueOnError)
@@ -91,14 +91,14 @@ func TestPackagesAndTestargs(t *testing.T) {
 			[]string{testdata + "/tags"}, nil,
 		},
 		{
-			[]string{testdata +"/tags", "-tags", "tag1"},
+			[]string{testdata + "/tags", "-tags", "tag1"},
 			[]string{testdata + "/tags"},
-            []string{"-tags", "tag1"},
+			[]string{"-tags", "tag1"},
 		},
 		{
-			[]string{testdata +"/tags", "-tags=tag1"},
+			[]string{testdata + "/tags", "-tags=tag1"},
 			[]string{testdata + "/tags"},
-            []string{"-tags=tag1"},
+			[]string{"-tags=tag1"},
 		},
 	}
 	for i, tc := range testcases {

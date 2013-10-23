@@ -25,9 +25,9 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/axw/gocov"
-	"github.com/axw/gocov/gocovutil"
-	"github.com/axw/gocov/parser"
+	"github.com/brandscreen/gocov"
+	"github.com/brandscreen/gocov/gocovutil"
+	"github.com/brandscreen/gocov/parser"
 	"go/ast"
 	"go/build"
 	goparser "go/parser"
@@ -43,9 +43,9 @@ import (
 	"strings"
 )
 
-const gocovPackagePath = "github.com/axw/gocov"
-const instrumentedGocovPackagePath = "github.com/axw/gocov/instrumented"
-const unmanagedPackagePathRoot = "github.com/axw/gocov/unmanaged"
+const gocovPackagePath = "github.com/brandscreen/gocov"
+const instrumentedGocovPackagePath = "github.com/brandscreen/gocov/instrumented"
+const unmanagedPackagePathRoot = "github.com/brandscreen/gocov/unmanaged"
 
 func usage() {
 	fmt.Fprintf(os.Stderr, "Usage:\n\n\tgocov command [arguments]\n\n")

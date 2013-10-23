@@ -6,7 +6,7 @@ Coverage testing tool for The Go Programming Language
 
 ## Installation
 
-```go get github.com/axw/gocov/gocov```
+```go get github.com/brandscreen/gocov/gocov```
 
 ## Usage
 
@@ -48,8 +48,8 @@ Running `gocov report <coverage.json>` will generate a textual
 report from the coverage data output by `gocov test`. It is
 assumed that the source code has not changed in between.
 
-Output from ```gocov test``` is logged to stdout so users with 
-POSIX compatible terminals can direct the output to ```gocov report``` 
+Output from ```gocov test``` is logged to stdout so users with
+POSIX compatible terminals can direct the output to ```gocov report```
 to view a summary of the test coverage, for example: -
 
     gocov test mypackage | gocov report
@@ -65,7 +65,7 @@ it with coverage information, such as which lines have been missed.
 [GoCovGUI](http://github.com/nsf/gocovgui/):
 A simple GUI wrapper for the gocov coverage analysis tool.
 
-[gocov-html](https://github.com/matm/gocov-html):
+[gocov-html](https://github.com/brandscreen/gocov-html):
 A simple helper tool for generating HTML output from gocov.
 
 [gocov-xml](https://github.com/AlekSi/gocov-xml):
